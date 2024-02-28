@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .pBtn {
+        @apply bg-primaryBtn px-10 font-bold text-lg py-2 rounded-lg min-w-32
+    }
+
+    .form-input {
+        @apply w-36 px-4 py-1.5 outline-none text-lg border-2 border-[#f3e9d5] rounded-lg text-gray-600 ml-12
+    }
+
+    .form-field {
+        @apply flex justify-between items-center
+    }
+
+    .form {
+        @apply flex flex-col text-[1.3rem] text-gray-600 font-bold gap-5 tracking-wide bg-bgColor
+    }
+
+}
