@@ -15,8 +15,7 @@ function EatNSplit() {
   };
 
   const handleSplitBill = (newFriend, id) => {
-    setFriendList(prevState => [...prevState.map(friend => friend.id === id ? newFriend : friend)]);
-    console.log(friendList);
+    setFriendList(prevState => prevState.map(friend => friend.id === id ? newFriend : friend));
   };
 
   return (<div className={"font-sans flex gap-10 items-start justify-center text-[#383e40] mt-12"}>
